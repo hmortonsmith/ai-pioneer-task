@@ -1,0 +1,66 @@
+{
+  "contract_type": "Order Form",
+  "triage_level": "NEEDS_REVIEW",
+  "flags": [
+    {
+      "clause_area": "governing_law",
+      "issue": "Governing law set to New York with an added right for a Delaware-domiciled affiliate to choose its own forum -- unusual and asymmetric.",
+      "contract_position": "New York law; Customer's Delaware affiliate may bring disputes 'in a forum of its choosing'.",
+      "playbook_position": "England & Wales, exclusive jurisdiction.",
+      "severity": "high",
+      "suggested_redline": null
+    },
+    {
+      "clause_area": "limitation_of_liability",
+      "issue": "Liability is explicitly uncapped and extends to indirect and consequential losses, with no carve-out structure at all.",
+      "contract_position": "'Total liability... shall be uncapped... including but not limited to indirect, special, and consequential losses.'",
+      "playbook_position": "Capped at 12 months' fees, standard carve-outs only.",
+      "severity": "high",
+      "suggested_redline": "Replace with standard limitation of liability clause: liability capped at 12 months' fees paid or payable under this Order Form, with carve-outs limited to confidentiality breach, IP infringement, gross negligence, and death or personal injury; exclude indirect and consequential losses for both parties."
+    },
+    {
+      "clause_area": "indemnity",
+      "issue": "One-sided, unlimited-scope indemnity ('any and all claims... of any kind') with no reciprocal indemnity from Customer.",
+      "contract_position": "Supplier indemnifies Customer for 'any and all claims, losses, damages, and expenses of any kind'.",
+      "playbook_position": "Mutual indemnity, scoped to IP infringement and confidentiality breach only.",
+      "severity": "high",
+      "suggested_redline": "Narrow to mutual indemnity scoped to third-party claims arising from (a) IP infringement and (b) breach of confidentiality obligations, by either party."
+    },
+    {
+      "clause_area": "auto_renewal",
+      "issue": "36-month auto-renewal with a 90-day opt-out right granted to Customer only -- no reciprocal right for Supplier.",
+      "contract_position": "Auto-renews for successive 36-month terms; only Customer may give 90 days' notice not to renew.",
+      "playbook_position": "Auto-renewal acceptable with mutual right, max 30-60 day notice.",
+      "severity": "medium",
+      "suggested_redline": "Make the non-renewal right mutual, and reduce notice period to 60 days for both parties."
+    },
+    {
+      "clause_area": "termination_for_convenience",
+      "issue": "No termination-for-convenience right at all for either party during the 36-month term -- only for-cause termination.",
+      "contract_position": "'Neither party may terminate... except for material uncured breach.'",
+      "playbook_position": "Either party may terminate for convenience on 30 days' notice.",
+      "severity": "high",
+      "suggested_redline": "Add a mutual termination-for-convenience right on 60 days' written notice, reflecting the longer 36-month term."
+    },
+    {
+      "clause_area": "data_protection",
+      "issue": "Personal data will be shared for professional services, but no data processing / UK GDPR clause is included in this Order Form.",
+      "contract_position": "'Customer will share end-user personal data... No data processing terms are otherwise specified.'",
+      "playbook_position": "Must reference UK GDPR / DPA 2018 with a standard DPA where personal data is shared.",
+      "severity": "high",
+      "suggested_redline": "Add the standard Data Processing Addendum by reference, and require both parties to comply with UK GDPR and the Data Protection Act 2018 in respect of any personal data shared under this Order Form."
+    },
+    {
+      "clause_area": "payment_terms",
+      "issue": "Net 60 payment terms, longer than the standard maximum.",
+      "contract_position": "Payable Net 60 days from invoice.",
+      "playbook_position": "Net 30 standard, Net 45 acceptable maximum.",
+      "severity": "low",
+      "suggested_redline": "Negotiate down to Net 45; Net 60 should require commercial sign-off, not just legal sign-off."
+    }
+  ],
+  "summary": "High-risk paper: uncapped liability, a broad one-sided indemnity, no termination-for-convenience right, and a missing data protection clause despite personal data being in scope -- alongside a non-standard forum clause. This is exactly the kind of contract that should jump the queue, and it comes with the deviations already isolated so the lawyer starts from a marked-up list, not page one.",
+  "estimated_minutes_saved": 35,
+  "contract_file": "03_order_form_northwind.md",
+  "contract_text": "# ORDER FORM\n\nThis Order Form is issued under, and incorporates by reference, the Master Subscription Agreement between Meridian Security Ltd (\"Meridian\") and Northwind Financial Systems plc (\"Customer\") dated as of the Effective Date.\n\n**Product:** SecureScan Enterprise Edition \u2014 60 user licences, plus professional services (contract review tooling integration, 15 days)\n\n**Subscription Term:** 36 months from the Effective Date.\n\n**Fees:** \u00a3118,000 per annum, payable Net 60 days from invoice date.\n\n**Governing Law:** This Order Form shall be governed by the laws of the State of New York, and the Customer's Delaware-domiciled affiliate reserves the right to bring any dispute in a forum of its choosing.\n\n**Limitation of Liability:** Supplier's total liability under this Order Form shall be uncapped in respect of any claim arising from or in connection with the Services, including but not limited to indirect, special, and consequential losses.\n\n**Indemnity:** Supplier shall indemnify, defend and hold harmless the Customer, its affiliates, officers, and employees against any and all claims, losses, damages, and expenses of any kind arising out of or relating to this Order Form.\n\n**Renewal:** This Order Form will automatically renew for successive 36-month terms unless the Customer provides at least 90 days' written notice of non-renewal. No equivalent right of non-renewal is granted to Supplier.\n\n**Data Protection:** Customer will share end-user personal data with Supplier for the purposes of the professional services engagement. No data processing terms are otherwise specified in this Order Form.\n\n**Termination for Convenience:** Neither party may terminate this Order Form prior to the end of the then-current 36-month term except for material uncured breach.\n\nSigned for and on behalf of Northwind Financial Systems plc: _________________________\n"
+}
